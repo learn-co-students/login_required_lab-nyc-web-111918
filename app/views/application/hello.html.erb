@@ -1,0 +1,13 @@
+hello.html.erb
+
+<h1>hello, <%=session[:name]%></h1>
+
+
+<%= link_to 'secret site', secret_path %>
+<br>
+<br>
+<br>
+<%= form_tag ({controller: 'sessions', action: 'destroy', method: 
+'post'}) do %>
+<input type=submit value='logout'>
+<%end%>
